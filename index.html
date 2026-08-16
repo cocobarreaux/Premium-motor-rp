@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Motors RP — Concessionnaire</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">PREMIUM <span>MOTORS</span><small>ROLEPLAY</small></div>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#vehicules">Véhicules</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn" href="#vehicules">Voir le stock</a>
+</header>
+
+<main>
+<section id="accueil" class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">CONCESSIONNAIRE AUTOMOBILE • LOS SANTOS</p>
+    <h1>Votre prochaine voiture<br><em>commence ici.</em></h1>
+    <p>Découvrez notre sélection de véhicules disponibles à la vente pour votre aventure RP.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#vehicules">Découvrir les véhicules</a>
+      <a class="btn ghost" href="#contact">Nous contacter</a>
+    </div>
+  </div>
+</section>
+
+<section id="vehicules" class="section">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">NOTRE STOCK</p>
+      <h2>Véhicules disponibles</h2>
+    </div>
+    <input id="search" class="search" type="search" placeholder="Rechercher un véhicule...">
+  </div>
+  <div class="filters">
+    <button class="filter active" data-category="Tous">Tous</button>
+    <button class="filter" data-category="Sportive">Sportives</button>
+    <button class="filter" data-category="Berline">Berlines</button>
+    <button class="filter" data-category="SUV">SUV</button>
+    <button class="filter" data-category="Utilitaire">Utilitaires</button>
+  </div>
+  <div id="cars" class="grid"></div>
+</section>
+
+<section id="services" class="section dark">
+  <p class="eyebrow">NOTRE SAVOIR-FAIRE</p>
+  <h2>Un service pensé pour le RP</h2>
+  <div class="services">
+    <article><div class="icon">01</div><h3>Vente</h3><p>Un catalogue renouvelé et des véhicules adaptés à tous les budgets.</p></article>
+    <article><div class="icon">02</div><h3>Reprise</h3><p>Proposez votre ancien véhicule et recevez une estimation RP.</p></article>
+    <article><div class="icon">03</div><h3>Financement</h3><p>Solutions de financement personnalisables selon votre personnage.</p></article>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div>
+    <p class="eyebrow">PRENDRE CONTACT</p>
+    <h2>Une voiture vous intéresse ?</h2>
+    <p>Envoyez votre demande. Un commercial vous répondra rapidement en RP.</p>
+  </div>
+  <form id="contactForm">
+    <input required name="name" placeholder="Nom du personnage">
+    <input required name="phone" placeholder="Téléphone RP">
+    <input name="vehicle" placeholder="Véhicule souhaité">
+    <textarea required name="message" rows="5" placeholder="Votre demande..."></textarea>
+    <button class="btn" type="submit">Envoyer la demande</button>
+    <p id="formStatus" class="status"></p>
+  </form>
+</section>
+</main>
+
+<footer>
+  <div class="logo">PREMIUM <span>MOTORS</span><small>ROLEPLAY</small></div>
+  <p>Site fictif destiné à un serveur RP. Aucun achat réel.</p>
+</footer>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-card">
+    <button id="closeModal" class="close">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
